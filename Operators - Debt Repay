@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int r = sc.nextInt();
+        float si = (x*y*r) /100;
+        float total = x + si;
+        float discount = (2f/100) * si;
+        float paidAmount = total - discount;
+        System.out.printf("%.2f\n", si);
+        System.out.printf("%.2f\n", total);
+        System.out.printf("%.2f\n", discount);
+        System.out.printf("%.2f\n", paidAmount);
+    }
+}
