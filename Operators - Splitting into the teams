@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int total = sc.nextInt();
+        int split =  sc.nextInt();
+        int leftout  = total % split;
+        int team = total / split;
+        System.out.printf("The number of friends in each team is %d and left out is %d" , team,leftout);
+    }
+}
